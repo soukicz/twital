@@ -46,7 +46,7 @@ trait TwitalLoaderTrait
      * @param Twital $twital
      * @param bool $addDefaults If NULL, some standard rules will be used (`*.twital.*` and `*.twital`).
      */
-    public function __construct(LoaderInterface $loader = null, Twital $twital = null, $addDefaults = true)
+    public function __construct(?LoaderInterface $loader = null, ?Twital $twital = null, $addDefaults = true)
     {
         $this->loader = $loader;
         $this->twital = $twital;
