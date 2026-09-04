@@ -369,7 +369,7 @@ This is an example for a valid listener:
 
     <?php
     class MySubscriber implements EventSubscriberInterface {
-        public static function getSubscribedEvents() {
+        public static function getSubscribedEvents(): array {
             return array(
                 CompilerEvents::POST_DUMP => 'modifySource'
                 CompilerEvents::PRE_DUMP => 'modifyDOM'
@@ -400,7 +400,7 @@ Here an example:
     <?php
     class MySubscriber implements EventSubscriberInterface
     {
-        public static function getSubscribedEvents(){
+        public static function getSubscribedEvents(): array {
             return array(
                 CompilerEvents::PRE_LOAD => 'modifySource'
             );
@@ -432,7 +432,7 @@ Here an example:
 
     <?php
     class MySubscriber implements EventSubscriberInterface {
-        public static function getSubscribedEvents() {
+        public static function getSubscribedEvents(): array {
             return array(
                 CompilerEvents::POST_LOAD => 'modifyDOM'
             );
@@ -466,7 +466,7 @@ Here an example:
     <?php
     class MySubscriber implements EventSubscriberInterface
     {
-        public static function getSubscribedEvents(){
+        public static function getSubscribedEvents(): array {
             return array(
                 CompilerEvents::PRE_DUMP => 'modifyDOM'
             );
@@ -493,7 +493,7 @@ Here an example:
 
     <?php
     class MySubscriber implements EventSubscriberInterface {
-        public static function getSubscribedEvents() {
+        public static function getSubscribedEvents(): array {
             return array(
                 CompilerEvents::POST_DUMP => 'modifySource'
             );

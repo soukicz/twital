@@ -30,7 +30,7 @@ class ContextAwareEscapingSubscriber implements EventSubscriberInterface
         ), $options);
     }
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return array(
             CompilerEvents::PRE_DUMP => 'addEscaping'

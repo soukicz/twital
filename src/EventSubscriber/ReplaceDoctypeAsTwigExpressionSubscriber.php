@@ -13,7 +13,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  */
 class ReplaceDoctypeAsTwigExpressionSubscriber implements EventSubscriberInterface
 {
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return array(
             CompilerEvents::PRE_LOAD => array('replaceDoctype', 130),

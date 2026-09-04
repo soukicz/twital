@@ -22,7 +22,7 @@ class FixTwigExpressionSubscriber extends AbstractTwigExpressionSubscriber
         ));
     }
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return array(
             CompilerEvents::PRE_LOAD => array('addPlaceholder', 128),

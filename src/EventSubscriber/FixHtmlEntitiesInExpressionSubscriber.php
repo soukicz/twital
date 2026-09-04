@@ -11,7 +11,7 @@ use Goetas\Twital\EventDispatcher\SourceEvent;
  */
 class FixHtmlEntitiesInExpressionSubscriber extends AbstractTwigExpressionSubscriber
 {
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return array(
             CompilerEvents::PRE_LOAD => 'addPlaceholder',

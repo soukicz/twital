@@ -2,13 +2,10 @@
 
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)
+    ->exclude('vendor')
 ;
 
-if (PHP_MAJOR_VERSION < 7) {
-    $finder->notName('TwitalLoaderTwigGte3.php');
-}
-
-return PhpCsFixer\Config::create()
+return (new PhpCsFixer\Config())
     ->setRules(array(
         '@PSR2' => true,
         'array_syntax' => array('syntax' => 'long'),

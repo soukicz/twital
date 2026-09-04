@@ -1,7 +1,7 @@
 /.settings
 /.buildpath
 /.project
-/.php_cs.cache
+/.php-cs-fixer.cache
 /vendor
 .idea
 composer.lock
