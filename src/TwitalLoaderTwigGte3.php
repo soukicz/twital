@@ -27,7 +27,7 @@ abstract class TwitalLoaderTwigGte3 implements LoaderInterface
         return $this->loader->isFresh($name, $time);
     }
 
-    public function exists(string $name)
+    public function exists(string $name): bool
     {
         return $this->doExists($name);
     }
